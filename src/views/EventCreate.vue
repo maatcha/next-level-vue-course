@@ -73,8 +73,8 @@
         <datepicker
           placeholder="Select a date"
           v-model="event.date"
-          @opened="$v.event.dates.$touch()"
-          :input-class="{ error: $v.event.date.$error }"
+          @opened="$v.event.date.$touch()"
+          :wrapper-class="{ error: $v.event.date.$error }"
         />
       </div>
       <template v-if="$v.event.date.$error">
